@@ -50,6 +50,7 @@ jobs:
         orgId: ${{ secrets.CONTRAST_ORGANIZATION_ID }}
         authHeader: ${{ secrets.CONTRAST_AUTH_HEADER }}
         apiUrl: ${{ vars.CONTRAST_GITHUB_APP_TS_URL }}
+        # conf for Int-S-Acct
     #Upload the results to GitHub
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v2
